@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,29 +10,30 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    background:#f9f9f9;
+    background:#f5f7fb;
     text-align:center;
 }
 
 .container{
-    width:900px;
+    width:1000px;
     margin:auto;
-    padding:40px;
+    padding:50px;
 }
 
 h1{
-    font-size:34px;
-    margin-bottom:15px;
+    font-size:42px;
+    margin-bottom:20px;
 }
 
 .authors{
-    font-size:20px;
+    font-size:22px;
     margin-bottom:10px;
 }
 
 .authors a{
     text-decoration:none;
     color:#1a73e8;
+    margin:0 8px;
 }
 
 .authors a:hover{
@@ -41,66 +41,81 @@ h1{
 }
 
 .affiliation{
-    font-size:16px;
+    font-size:17px;
     color:#555;
 }
 
 .conference{
+    margin-top:25px;
+}
+
+.cvpr{
+    display:inline-block;
+    font-size:50px;
+    font-weight:800;
+    background:#e53935;
+    color:white;
+    padding:12px 30px;
+    border-radius:12px;
     margin-top:10px;
-    font-size:18px;
-    color:#333;
+    letter-spacing:2px;
 }
 
 .buttons{
-    margin-top:25px;
+    margin-top:35px;
 }
 
 .button{
     display:inline-block;
-    padding:10px 18px;
-    margin:8px;
+    padding:12px 22px;
+    margin:10px;
     background:#1a73e8;
     color:white;
-    border-radius:6px;
+    border-radius:8px;
     text-decoration:none;
     font-weight:bold;
+    font-size:16px;
 }
 
 .button:hover{
-    background:#1558b0;
+    background:#0f5cc0;
 }
 
 .section{
-    margin-top:50px;
+    margin-top:60px;
     text-align:left;
 }
 
 .section h2{
     border-bottom:2px solid #ddd;
-    padding-bottom:5px;
+    padding-bottom:6px;
+    font-size:28px;
 }
 
 .abstract{
-    font-size:17px;
-    line-height:1.6;
+    font-size:18px;
+    line-height:1.7;
+    margin-top:15px;
 }
 
 img{
     width:100%;
-    margin-top:20px;
-    border-radius:6px;
+    margin-top:25px;
+    border-radius:8px;
 }
 
 pre{
-    background:#eee;
-    padding:15px;
+    background:#eeeeee;
+    padding:18px;
     overflow-x:auto;
+    border-radius:8px;
+    font-size:15px;
 }
 
 footer{
-    margin-top:40px;
+    margin-top:60px;
     color:#777;
-    font-size:14px;
+    font-size:15px;
 }
 
 </style>
@@ -129,7 +144,13 @@ Affiliations here
 </div>
 
 <div class="conference">
-Accepted at the <b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</b>
+
+<p style="font-size:20px;">Accepted at</p>
+
+<div class="cvpr">
+CVPR 2026
+</div>
+
 </div>
 
 <div class="buttons">
@@ -140,7 +161,6 @@ Accepted at the <b>IEEE/CVF Conference on Computer Vision and Pattern Recognitio
 <a class="button" href="#">Dataset</a>
 
 </div>
-
 
 <div class="section">
 
@@ -163,7 +183,6 @@ demonstrate strong improvements in base-to-novel generalization and few-shot rec
 
 </div>
 
-
 <div class="section">
 
 <h2>Method Overview</h2>
@@ -171,7 +190,6 @@ demonstrate strong improvements in base-to-novel generalization and few-shot rec
 <img src="method.png" alt="Method Figure">
 
 </div>
-
 
 <div class="section">
 
@@ -190,9 +208,8 @@ year={2026}
 
 </div>
 
-
 <footer>
-Project page for CASPA – CVPR 2026
+CASPA Project Page — CVPR 2026
 </footer>
 
 </div>
