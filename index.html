@@ -1,1 +1,201 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>CASPA | CVPR 2026</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    text-align:center;
+}
+
+.container{
+    width:900px;
+    margin:auto;
+    padding:40px;
+}
+
+h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.authors{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.authors a{
+    text-decoration:none;
+    color:#1a73e8;
+}
+
+.authors a:hover{
+    text-decoration:underline;
+}
+
+.affiliation{
+    font-size:16px;
+    color:#555;
+}
+
+.conference{
+    margin-top:10px;
+    font-size:18px;
+    color:#333;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.button{
+    display:inline-block;
+    padding:10px 18px;
+    margin:8px;
+    background:#1a73e8;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#1558b0;
+}
+
+.section{
+    margin-top:50px;
+    text-align:left;
+}
+
+.section h2{
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+.abstract{
+    font-size:17px;
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    margin-top:20px;
+    border-radius:6px;
+}
+
+pre{
+    background:#eee;
+    padding:15px;
+    overflow-x:auto;
+}
+
+footer{
+    margin-top:40px;
+    color:#777;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+CASPA: Graph-Structured Concept Anchors for Modality-Agnostic Adaptation in Vision–Language Models
+</h1>
+
+<div class="authors">
+
+<a href="#">Abhiroop Chatterjee</a> ·
+<a href="#">Susmita Ghosh</a> ·
+<a href="#">Ashish Ghosh</a> ·
+<a href="#">Emmett Ientilucci</a>
+
+</div>
+
+<div class="affiliation">
+Affiliations here
+</div>
+
+<div class="conference">
+Accepted at the <b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</b>
+</div>
+
+<div class="buttons">
+
+<a class="button" href="#">Paper</a>
+<a class="button" href="#">PDF</a>
+<a class="button" href="#">Code</a>
+<a class="button" href="#">Dataset</a>
+
+</div>
+
+
+<div class="section">
+
+<h2>Abstract</h2>
+
+<p class="abstract">
+
+This work introduces CASPA, a framework for improving adaptation in vision–language models.
+Instead of assigning independent prompts to each category, CASPA learns a shared set of
+semantic concept anchors that exist in both visual and textual embedding spaces.
+Class representations are constructed as weighted combinations of these anchors,
+encouraging parameter sharing across categories and improving robustness in few-shot
+learning settings.
+
+The proposed method supports efficient generalization to unseen classes and cross-dataset
+transfer without retraining the backbone model. Experiments across multiple datasets
+demonstrate strong improvements in base-to-novel generalization and few-shot recognition.
+
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Method Overview</h2>
+
+<img src="method.png" alt="Method Figure">
+
+</div>
+
+
+<div class="section">
+
+<h2>BibTeX</h2>
+
+<pre>
+
+@inproceedings{caspa2026,
+title={CASPA: Graph-Structured Concept Anchors for Modality-Agnostic Adaptation in Vision–Language Models},
+author={Chatterjee, Abhiroop and Ghosh, Susmita and Ghosh, Ashish and Ientilucci, Emmett},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+year={2026}
+}
+
+</pre>
+
+</div>
+
+
+<footer>
+Project page for CASPA – CVPR 2026
+</footer>
+
+</div>
+
+</body>
+</html>
