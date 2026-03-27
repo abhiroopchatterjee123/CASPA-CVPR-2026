@@ -10,7 +10,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    background:#f5f7fb;
+    background:#ffffff;
     text-align:center;
 }
 
@@ -94,8 +94,11 @@ h1{
 }
 
 img {
-    max-width: 100%;
+    max-width: 900px;
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 25px auto;
 }
 
 pre{
@@ -161,7 +164,33 @@ CVPR 2026
 
 <p class="abstract">
 
- Our work "CASPA: Graph-Structured Concept Anchors for Modality-Agnostic Adaptation in Vision–Language Models," presents a structurally constrained alternative to class-conditional prompt parameterization. Rather than allocating independent prompt embeddings per category, CASPA decomposes class prototypes into soft combinations over a shared set of learnable semantic anchors instantiated in both textual and visual latent spaces. These anchors form a low-rank, graph-structured basis that captures recurrent semantic directions across categories, and enables prototype reconstruction via anchor-weighted aggregation with residual refinement. This compositional parameterization induces parameter sharing, reduces overfitting in low-shot regimes, and robust generalization to novel classes via confidence-adaptive zero-shot prototype scaling, all while keeping the backbone frozen. 
+ Recent advances in vision–language models (VLMs) have
+revealed both the promise and the rigidity of large-scale
+pretraining. Despite their impressive zero-shot general-
+ization, existing adaptation paradigms—whether prompt
+tuning, adapter injection, or fine-tuning—remain class-
+specific, modality-biased, and structure-agnostic. How-
+ever, these design choices limit reasoning-level transfer
+across tasks. To this end, we rethink adaptation as a
+shared conceptual structure rather than a per-class special-
+ization. We propose CASPA (Concept-Anchored Seman-
+tic Prompt Adapter), a dual-anchor semantic adapter that
+jointly learns shared text and image anchors as a bidirec-
+tional conceptual interface between modalities. Each class
+learns a soft association distribution over these anchors,
+producing compositional representations which enable pa-
+rameter sharing and semantic reuse. To further align visual
+and textual reasoning spaces, CASPA employs Semantic
+Cross-Consistency Regularization (S-XCR), enforcing ge-
+ometric and semantic agreement between text- and image-
+conditioned anchor mixtures. CASPA, therefore, provides
+a structurally constrained alternative to class-conditional
+prompt parameterization while keeping the CLIP backbone
+frozen. Evaluated across four adaptation regimes—Base-
+to-Novel generalization, cross-data transfer, few-shot learn-
+ing, and backbone-agnostic evaluation—on eleven diverse
+visual recognition datasets, CASPA matches or outperforms
+state-of-the-art methods.
 
 </p>
 
