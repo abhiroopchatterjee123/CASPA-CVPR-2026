@@ -14,19 +14,7 @@ body{
     text-align:center;
 }
 
-.hero {
-    position: relative; /* ensures absolute children are positioned correctly */
-    width: 100vw;       /* full viewport width */
-    min-height: 100vh;  /* full viewport height (optional, if you want full screen) */
-    background: 
-        linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.75)),
-        url('https://raw.githubusercontent.com/abhiroopchatterjee123/CASPA-CVPR-2026/main/CVPR_Denver_2026.jpg') no-repeat center center;
-    background-size: cover;     /* scales to cover the entire container */
-    background-attachment: fixed; /* optional: gives parallax effect */
-    padding-top: 220px;
-    padding-bottom: 40px;
-    overflow-x: hidden; /* prevents horizontal scroll if some content sticks out */
-}
+.hero { background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.75)), url('https://raw.githubusercontent.com/abhiroopchatterjee123/CASPA-CVPR-2026/main/CVPR_Denver_2026.jpg'); background-size: cover; background-position: center; padding-top: 220px; padding-bottom: 40px; }
 
 .container{
     width:1000px;
