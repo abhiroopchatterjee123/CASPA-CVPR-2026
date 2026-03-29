@@ -66,15 +66,44 @@ h1{
 }
 
 .cvpr {
-    font-size: 38px;
-    font-weight: 800; /* a bit stronger for impact */
+    font-size: 40px; /* slightly bigger for impact */
+    font-weight: 900; /* ultra-bold for strong presence */
     margin-top: 15px;
-    letter-spacing: 2px; /* slightly tighter for elegance */
-    background: linear-gradient(90deg, #ff4d4d, #b30000); /* red gradient */
+    letter-spacing: 2px;
+    font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    
+    /* Black metallic / glossy effect */
+    background: linear-gradient(135deg, #000000, #444444, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.5); /* softer shadow for a modern look */
-    font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', sans-serif; /* sleek, modern font */
+
+    /* Glow and depth */
+    text-shadow: 
+        0 2px 2px rgba(0,0,0,0.4),
+        0 6px 10px rgba(0,0,0,0.6),
+        0 12px 20px rgba(0,0,0,0.8);
+
+    /* Optional subtle shine animation */
+    position: relative;
+    overflow: hidden;
+}
+
+.cvpr::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.3) 100%);
+    transform: rotate(45deg);
+    animation: shine 2s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% { transform: rotate(45deg) translate(-100%, 0); }
+    100% { transform: rotate(45deg) translate(100%, 0); }
 }
 
 .buttons{
